@@ -19,7 +19,7 @@ M5Stack Coreシリーズに接続し、他のPC等で動作しているAIモデ�
 
 <img src="https://github.com/akita11/AnythingLLMModule/blob/main/AnythingLLMModule_build1.jpg" width="240px">
 
-まず基板のこちら面に、6pと9p（または8p）のピンソケットをはんだ付けします。8pソケットを使う場合は、この写真のように1列分を開けた位置にとりつけてください。
+まず基板のこちら面に、6pと9p（または8p）のピンソケットをはんだ付けします。（8pソケットを使う場合は、この写真のように1列分を開けた位置にとりつけてください）
 
 <img src="https://github.com/akita11/AnythingLLMModule/blob/main/AnythingLLMModule_build2.jpg" width="240px">
 
@@ -35,9 +35,7 @@ Moduleに書き込む専用のファームウェアがあります。Coreから�
 
 ### Module側
 
-**USB-Cコネクタを接続する時に、ハンダ付けが取れないように注意してください！！！**  
-**はがれやすい場合があるので、かならずStampS3を手で押さえて抜き差しすること！！！**  
-<img src="https://github.com/akita11/AnythingLLMModule/blob/main/NukiSashi.jpg" width="240px">
+※StampS3Aをリフロー実装した場合は、USB-Cケーブル抜き差し時に、StampS3Aを手で押さえて固定することを推奨します。
 
 PlatformIOで[stampS3R](https://github.com/akita11/AnythingLLMModule/tree/main/stampS3R)をビルドして、基板上のM5StampS3に書き込みます。  
 このとき、`secrets.h`でPC等のローカルIPアドレス、WiFiのSSID/パスワードを設定してください。  
